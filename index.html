@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>截图</title>
+	
+	<style>
+		.box {
+			position: relative;
+		} 
+		#myCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            cursor: crosshair;
+        }
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="2.png" >
+	</div>
+
+	<script src="screenshot.js"></script>
+	<script>
+		new Screenshot('.box');
+	</script>
+</body>
+</html>
